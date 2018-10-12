@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wesh9.hokiecomposer.Editor_Frag"
+    android:background="#8cd4f2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:gravity="center"
+            >
+            <TextView
+                android:paddingTop="20dp"
+                android:text="Background Music"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/backgroundSpinner"
+                android:entries="@array/background_music"
+                >
+            </Spinner>
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:text="Overlap Effect 1"
+                android:textSize="20dp"
+                android:textColor="#4d172d"
+                />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/overlap1"
+                android:entries="@array/overlap"
+                >
+            </Spinner>
+
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <SeekBar
+                android:layout_height="wrap_content"
+                android:minHeight="10dp"
+                android:maxHeight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:id="@+id/ovseek1"
+                />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:text="Overlap Effect 2"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/overlap2"
+                android:entries="@array/overlap"
+                >
+            </Spinner>
+
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+
+            <SeekBar
+                android:layout_height="wrap_content"
+                android:minHeight="10dp"
+                android:maxHeight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:id="@+id/ovseek2" />
+        </TableRow>
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:text="Overlap Effect 3"
+                android:textSize="20dp"
+                android:textColor="#e96106"
+                />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/overlap3"
+                android:entries="@array/overlap"
+
+                >
+            </Spinner>
+
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <SeekBar
+                android:layout_height="wrap_content"
+                android:minHeight="10dp"
+                android:maxHeight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:id="@+id/ovseek3"
+                />
+        </TableRow>
+     <Button
+         android:layout_marginTop="20dp"
+         android:text="play"
+         android:id="@+id/play"
+         android:onClick="onClickPlay"
+         />
+
+    </TableLayout>
+
+
+</FrameLayout>
